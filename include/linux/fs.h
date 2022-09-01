@@ -1918,6 +1918,8 @@ struct file_operations {
 	ANDROID_KABI_RESERVE(2);
 	ANDROID_KABI_RESERVE(3);
 	ANDROID_KABI_RESERVE(4);
+
+	bool may_pollfree;
 } __randomize_layout;
 
 struct inode_operations {
